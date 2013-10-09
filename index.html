@@ -48,21 +48,27 @@
 			</p>
 		</div>
 		<div class="content-detail-section drop-shadow raised" id="skills-box" ng-controller="SkillListCtrl">
-			<div><em>Skill Search:</em> <input ng-model="query"></div>
        <h1>Skills</h1> 
 				<ul>
-					<li ng-repeat="skill in skills | filter:query" ng-bind-html-unsafe="skill.description">
+					<li ng-repeat="skill in skills" ng-bind-html-unsafe="skill.description">
              {{skill.description}}
           </li>
 				</ul>
 		</div>
 		<div class="content-detail-section drop-shadow raised" id="experience-box" ng-controller="ExpListCtrl">
 			<h1>Work Experience</h1>
-      <div ng-repeat="exp in exps">
+      <div><em>Skill Search: </em><input ng-model="query"><em>Sort: </em>
+          
+          <select ng-model="orderProp">
+            <option value="-id">old -> new</option>
+            <option value="id">new -> old</option>
+          </select>
+      </div>
+      <div ng-repeat="exp in exps | filter:query | orderBy:orderProp">
         <h2>{{exp.title}}</h2>
-        <p>{{exp.description}}</p>
+        <p ng-bind-html-unsafe="exp.description">{{exp.description}}</p>
         <ul>
-					<li ng-repeat="task in (exp.tasks)"  ng-bind-html-unsafe="task.description">
+					<li ng-repeat="task in (exp.tasks) | filter:query"  ng-bind-html-unsafe="task.description">
              {{task.description}}
           </li>
 				 </ul>

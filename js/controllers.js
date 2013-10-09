@@ -8,7 +8,7 @@ function SkillListCtrl($scope, $http) {
   });
 
 
-  $scope.orderProp = 'id';
+  
 }
 
 angular.module('personalApp', []).controller('SkillListCtrl', ['$scope', '$http',ExpListCtrl]);
@@ -18,7 +18,7 @@ function ExpListCtrl($scope, $http) {
     $scope.exps = data;
     
   });
-
+  $scope.orderProp = 'id';
 }
 
 angular.module('personalApp', []).controller('ExpListCtrl', ['$scope', '$http',ExpListCtrl]);

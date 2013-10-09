@@ -93,7 +93,7 @@
 {
   "title": "NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION (NOAA)",
   "id": 5,
-  "description": "Major programming in multiple tasks of building Water life, educational games, for NOAA. <a href='http://games.noaa.gov/'>http://games.noaa.gov/</a> There are two projects I have done programming for: “WaterLife - Sea Turtles and the Quest to Nest”; “WaterLife - Where Rivers Meet the Sea”",
+  "description": "Major programming in multiple tasks of building Water life, educational games, for NOAA. <a href='http://games.noaa.gov/'>http://games.noaa.gov/</a> There are two projects I have done programming for: 'WaterLife - Sea Turtles and the Quest to Nest'; 'WaterLife - Where Rivers Meet the Sea'",
   "tasks": [
     {
       "description": "Using <em class='highlight'>ActionScript 3.0 OOP</em> to program major mini games and game sections."
