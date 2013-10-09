@@ -1,0 +1,135 @@
+[
+{
+  "title": "Randstad – Current",
+  "id": 1,  
+  "description": "Marriott Global HSIA Project 2nd Release This project involves working with more than eighteen internet service providers",
+  "tasks": [
+    {
+      "description": "Provide customized <em class='highlight'>maintainable Responsive Web Design</em> solutions based on not only business requirements of <em class='highlight'>cross-browser/platform compatibility, Section 508 Compliance</em>, 3rd party friendly and speed to market etc., but also considerations over both business and technical limitations."
+    },
+    {
+      "description": "Combine and use <em class='highlight'>SASS, Compass, Scout, HTML5, CSS3, Sublime Text 2 and Google Chrome/Canary DevTools</em> to convert wire-frames and mock-ups into prototypes rapidly to help proof concepts from cross-browser/platform perspective."
+    },
+    {
+      "description": "Work in eclipse Coordinate with backend- developers and other front-end developer to improve existing <em class='highlight'>JSP</em> templates as well as create new <em class='highlight'>JSP</em> templates to simplify site maintenance and ensure site performance. (First time working in <em class='highlight'>JSP</em> environment.)"
+    },
+    {
+      "description": "Writting <em class='highlight'>jQuery/JavaScript</em> to add dynamic visual improvements/interactions such as collapsible forms, conditional links, and customized <em class='highlight'>Omniture</em> tracking to the site to meet user experience and marketing requirements. Using <em class='highlight'>Test&Target</em> with <em class='highlight'>jQuery/JavaScript</em> to support A/B testing and multivariate testing (MVT) with dynamic content."
+    },
+    {
+      "description": "Agile work with visual designers and back-end developers to identify and solve issues efficiently."
+    },
+    {
+      "description": "Work closely with designers to translate visual business requirements into front-end technical specifications. Communicate business requirements with more than eighteen internet service providers through emails, basecamp and bridge conference."
+    },
+    {
+      "description": "Help QA team with end to end lab testing together with developers from internet service providers’ side. Perform testing cross multiple browsers/devices and log defects."
+    }
+  ]
+},
+{
+  "title": "SPARKS IT SOLUTIONS",
+  "id": 2,
+  "description": "Children’s National Medical Center Web Developing Assignment",
+  "tasks": [
+    {
+      "description": "Developing and maintaining both static and dynamic content for homepage, news releases, web forms, images and other web pages cross browsers."
+    },
+    {
+      "description": "Managing site structures information and content through <em class='highlight'>Marqui (content management system), Blogger, Whatcounts, Google Analytics</em> and other database/content management tools."
+    },
+    {
+      "description": "Creating cross browser dynamic web interactions using <em class='highlight'>HTML, HTML5, CSS3 Javascript, JQuery, ASP.Net</em> and other commonly used markup/coding languages."
+    },
+    {
+      "description": "Us <em class='highlight'>Javascript/JQuery</em> to detect client device, create sliders, dropdowns, AJAX form fields, event-controlled elements and implement tracking."
+    },
+    {
+      "description": "Setting up domains and sub domains for blogs through multiple server hosting places such as godaddy.com and DNS Park etc."
+    },
+    {
+      "description": "Picking up <em class='highlight'>Marqui</em> rapidly and smoothly. Being able to learn from and show useful skills to other colleagues."
+    }
+  ]
+},
+{
+  "title": "",
+  "id": 3,
+  "description": "IQ Solutions eLearning Module Assignment",
+  "tasks": [
+    {
+      "description": "Researching and designing eLearning modules to run cross platforms and browsers."
+    },
+    {
+      "description": "Creating eLearning modules in multiple versions using <em class='highlight'>Adobe Captivate, Photoshop, Flash, Premiere Pro</em> and <em class='highlight'>Media Encoder</em> for various devices and browsers."
+    },
+    {
+      "description": "Building module page in <em class='highlight'>Visual Studio 2010</em> using <em class='highlight'>HTML, CSS, HTML5, CSS3, JavaScript</em> and <em class='highlight'>ASP.NET</em> to ensure <em class='highlight'>Section 508 Compliances.</em>"
+    },
+    {
+      "description": "Using browser detection to help choose and delivery corresponding content."
+    }
+  ]
+},
+{
+  "title": "",
+  "id": 4,
+  "description": "The Nature Conservancy Site Migration Assignment.",
+  "tasks": [
+    {
+      "description": "Migrating various content including blog posts, legal terms, community links, announcements and calendar events to <em class='highlight'>SharePoint</em> powered web part pages."
+    },
+    {
+      "description": "Correcting and editing web content using <em class='highlight'>HTML</em> and web site structures using <em class='highlight'>SharePoint 2010</em>."
+    },
+    {
+      "description": "Making suggestions to and cooperating with multiple departments to update web sites.</em>"
+    },
+    {
+      "description": "Converting table structure content to <em class='highlight'>SharePoint 2010</em> web parts for site links, tables, charts, rollups, and calendars etc."
+    }
+  ]
+},
+{
+  "title": "NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION (NOAA)",
+  "id": 5,
+  "description": "Major programming in multiple tasks of building Water life, educational games, for NOAA. <a href='http://games.noaa.gov/'>http://games.noaa.gov/</a> There are two projects I have done programming for: “WaterLife - Sea Turtles and the Quest to Nest”; “WaterLife - Where Rivers Meet the Sea”",
+  "tasks": [
+    {
+      "description": "Using <em class='highlight'>ActionScript 3.0 OOP</em> to program major mini games and game sections."
+    },
+    {
+      "description": "Using <em class='highlight'>Flash</em> to develop game objects, animations and graphics."
+    },
+    {
+      "description": "Using <em class='highlight'>HTML</em> to create web pages holding, displaying and sharing different versions of the project.</em>"
+    },
+    {
+      "description": "Using Google Group to exchange information during development in order to work distantly."
+    },
+    {
+      "description": "Using <em class='highlight'>adobe premiere</em> to create trailers for the projects."
+    }
+  ]
+},
+{
+  "title": "LET ME THINK. CO",
+  "id": 6,
+  "description": "Major programming in multiple tasks of building My Own Biome, educationalgames, for Baltimore County Public Schools.  <a href='http://myownbiome.com/'>http://myownbiome.com/</a>",
+  "tasks": [
+    {
+      "description": "Using <em class='highlight'>C#</em> to program major game tools, interfaces, AI, features and functions. Started the project with limited experience in <em class='highlight'>C#</em>."
+    },
+    {
+      "description": "Using <em class='highlight'>XNA/Visual Studio 2008/2010</em> as game engine."
+    },
+    {
+      "description": "Creating different versions of the game for Windows and <em class='highlight'>XBox 360</em>."
+    },
+    {
+      "description": "Using <em class='highlight'>TortoiseSVN</em> for version controls."
+    }
+  ]
+}
+]
+

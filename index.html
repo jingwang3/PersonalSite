@@ -56,65 +56,18 @@
           </li>
 				</ul>
 		</div>
-		<div class="content-detail-section drop-shadow raised" id="experience-box">
+		<div class="content-detail-section drop-shadow raised" id="experience-box" ng-controller="ExpListCtrl">
 			<h1>Work Experience</h1>
-			<h2>Randstad – Current</h2>
-			<p>Marriott Global HSIA Project 2nd Release
-				This project involves working with more than eighteen internet service providers
-			</p>
-			<ul>
-				<li>Provide customized <em class="highlight">maintainable Responsive Web Design</em> solutions based on not only business requirements of <em class="highlight">cross-browser/platform compatibility, Section 508 Compliance</em>, 3rd party friendly and speed to market etc., but also considerations over both business and technical limitations.</li>
-				<li>Combine and use <em class="highlight">SASS, Compass, Scout, HTML5, CSS3, Sublime Text 2 and Google Chrome/Canary DevTools</em> to convert wire-frames and mock-ups into prototypes rapidly to help proof concepts from cross-browser/platform perspective.</li>
-				<li>Work in eclipse Coordinate with backend- developers and other front-end developer to improve existing <em class="highlight">JSP</em> templates as well as create new <em class="highlight">JSP</em> templates to simplify site maintenance and ensure site performance. (First time working in <em class="highlight">JSP</em> environment.)</li>
-				<li>Writting <em class="highlight">jQuery/JavaScript</em> to add dynamic visual improvements/interactions such as collapsible forms, conditional links, and customized <em class="highlight">Omniture</em> tracking to the site to meet user experience and marketing requirements. Using <em class="highlight">Test&Target</em> with <em class="highlight">jQuery/JavaScript</em> to support A/B testing and multivariate testing (MVT) with dynamic content.
-				<li>Agile work with visual designers and back-end developers to identify and solve issues efficiently.</li>
-				<li>Work closely with designers to translate visual business requirements into front-end technical specifications. Communicate business requirements with more than eighteen internet service providers through emails, basecamp and bridge conference.</li>
-				<li>Help QA team with end to end lab testing together with developers from internet service providers’ side. Perform testing cross multiple browsers/devices and log defects.</li>
-			</ul>
-
-			<h2>SPARKS IT SOLUTIONS</h2>
-			<h3>Children’s National Medical Center Web Developing Assignment</h3>
-			<ul>
-				<li>Developing and maintaining both static and dynamic content for homepage, news releases, web forms, images and other web pages cross browsers.</li>
-				<li>Managing site structures information and content through <em class="highlight">Marqui (content management system), Blogger, Whatcounts, Google Analytics</em> and other database/content management tools.</li>
-				<li>Creating cross browser dynamic web interactions using <em class="highlight">HTML, HTML5, CSS3 Javascript, JQuery, ASP.Net</em> and other commonly used markup/coding languages.</li>
-				<li>Us <em class="highlight">Javascript/JQuery</em> to detect client device, create sliders, dropdowns, AJAX form fields, event-controlled elements and implement tracking.</li>
-				<li>Setting up domains and sub domains for blogs through multiple server hosting places such as godaddy.com and DNS Park etc.</li>
-				<li>Picking up <em class="highlight">Marqui</em> rapidly and smoothly. Being able to learn from and show useful skills to other colleagues.</li>
-			</ul>
-			<h3>IQ Solutions eLearning Module Assignment</h3>
-			<ul>
-				<li>Researching and designing eLearning modules to run cross platforms and browsers.</li>
-				<li>Creating eLearning modules in multiple versions using <em class="highlight">Adobe Captivate, Photoshop, Flash, Premiere Pro</em> and <em class="highlight">Media Encoder</em> for various devices and browsers.</li>
-				<li>Building module page in <em class="highlight">Visual Studio 2010</em> using <em class="highlight">HTML, CSS, HTML5, CSS3, JavaScript</em> and <em class="highlight">ASP.NET</em> to ensure <em class="highlight">Section 508 Compliances.</em></li>
-				<li>Using browser detection to help choose and delivery corresponding content.</li>
-			</ul>
-			<h3>The Nature Conservancy Site Migration Assignment.</h3>
-			<ul>
-				<li>Migrating various content including blog posts, legal terms, community links, announcements and calendar events to <em class="highlight">SharePoint</em> powered web part pages.</li>
-				<li>Correcting and editing web content using <em class="highlight">HTML</em> and web site structures using <em class="highlight">SharePoint 2010</em>.</li>
-				<li>Making suggestions to and cooperating with multiple departments to update web sites.</li>
-				<li>Converting table structure content to <em class="highlight">SharePoint 2010</em> web parts for site links, tables, charts, rollups, and calendars etc.</li>
-			</ul>
-			<h2>NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION (NOAA)</h2>
-			<p>Major programming in multiple tasks of building Water life, educational games, for NOAA. <a href="http://games.noaa.gov/">http://games.noaa.gov/</a>
-			There are two projects I have done programming for: “WaterLife - Sea Turtles and the Quest to Nest”; “WaterLife - Where Rivers Meet the Sea”
-			</p>
-			<ul>
-				<li>Using <em class="highlight">ActionScript 3.0 OOP</em> to program major mini games and game sections.</li>
-				<li>Using <em class="highlight">Flash</em> to develop game objects, animations and graphics.</li>
-				<li>Using <em class="highlight">HTML</em> to create web pages holding, displaying and sharing different versions of the project.</li>
-				<li>Using Google Group to exchange information during development in order to work distantly.</li>
-				<li>Using <em class="highlight">adobe premiere</em> to create trailers for the projects.</li>
-			</ul>
-			<h2>LET ME THINK. CO</h2>
-			<p>Major programming in multiple tasks of building My Own Biome, educationalgames, for Baltimore County Public Schools.  <a href="http://myownbiome.com/">http://myownbiome.com/</a></p>
-			<ul>
-				<li>Using <em class="highlight">C#</em> to program major game tools, interfaces, AI, features and functions. Started the project with limited experience in <em class="highlight">C#</em>.</li>
-				<li>Using <em class="highlight">XNA/Visual Studio 2008/2010</em> as game engine.</li>
-				<li>Creating different versions of the game for Windows and <em class="highlight">XBox 360</em>.</li>
-				<li>Using <em class="highlight">TortoiseSVN</em> for version controls.</li>
-			</ul>
+      <div ng-repeat="exp in exps">
+        <h2>{{exp.title}}</h2>
+        <p>{{exp.description}}</p>
+        <ul>
+					<li ng-repeat="task in (exp.tasks)"  ng-bind-html-unsafe="task.description">
+             {{task.description}}
+          </li>
+				 </ul>
+      </div>
+			
 		</div>
 		<div class="content-detail-section drop-shadow raised" id="education-box">
 			<h1>Education</h1>
