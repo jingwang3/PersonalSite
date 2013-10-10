@@ -9,7 +9,16 @@
   <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
   <link href="styles/base.css" rel="stylesheet" type="text/css" />
   <link href="styles/less/homepage.less" rel="stylesheet/less" type="text/css" />
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script><script type='text/javascript' src='js/less.js'></script><script type='text/javascript' src='js/homepage.js'></script><script type='text/javascript' src='js/GATracking.js'></script><script type='text/javascript' src='lib/angular/angular.js'></script><script type='text/javascript' src='js/controllers.js'></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "e0087832-8d49-4870-9515-b083c6b7940f", doNotHash: true, doNotCopy: false, hashAddressBar: false});</script> </head>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+  <script type='text/javascript' src='js/less.js'></script>
+  <script type='text/javascript' src='js/homepage.js'></script>
+  <script type='text/javascript' src='js/GATracking.js'></script>
+  <script type='text/javascript' src='lib/angular/angular.js'></script>
+  <script type='text/javascript' src='js/controllers.js'></script>
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "e0087832-8d49-4870-9515-b083c6b7940f", doNotHash: true, doNotCopy: false, hashAddressBar: false});</script> 
+ </head>
  <body>
   <header>
   <div class="drop-shadow curved curved-hz-down">
@@ -59,8 +68,8 @@
    <div class="content-detail-section drop-shadow raised" id="experience-box" ng-controller="ExpListCtrl">
     <h1>
      Work Experience</h1>
-    <div>
-     <em>Skill Search: </em><input ng-model="query" /><em>Sort: </em> <select ng-model="orderProp"><option value="-id">old -&gt; new</option><option value="id">new -&gt; old</option></select></div>
+    <div class="search-and-sort">
+     <em>Skill Search: <input ng-model="query" /></em><em>Sort: <select ng-model="orderProp"><option value="-id">old -&gt; new</option><option value="id">new -&gt; old</option></select></em></div>
     <div ng-repeat="exp in exps | filter:query | orderBy:orderProp">
      <h2>
       {{exp.title}}</h2>
@@ -89,15 +98,11 @@
      Contact</h1>
     <form name="contactForm" action="contact.php" id="contact-form" method="post">
      <p>
-      <em>Email * </em> <input class="full-width-field" id="email_input" name="email" type="email" required />
-      <span class="error" ng-show="contactForm.input.$error.required">
-        Required!</span>
-      <span class="error" ng-show="contactForm.input.$error.email">
-        Not valid email!</span></p>
+      <em>Email * </em> <input class="full-width-field" id="email_input" name="email" type="email" required /></p>
      <p>
       <em>Send me Jing&#39;s resume: </em><input id="resume_check" name="resume" type="checkbox" /></p>
      <p>
-      <em>Comment </em><textarea class="full-width-field" id="comment_input" name="comments">Please leave a comment here</textarea></p>
+      <em>Comment </em><textarea class="full-width-field" id="comment_input" name="comments">Please leave a comment here!</textarea></p>
      <p>
       <input type="submit" /></p>
     </form>

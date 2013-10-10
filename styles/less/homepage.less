@@ -1,3 +1,5 @@
+@BGC-A: rgba(200,0,0,.45);
+
 header, footer {
   color: #A5C956;
   width: 100%;
@@ -86,6 +88,11 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
   }
   div{
+    &.search-and-sort{
+        em{
+            display: inline-block;
+        }
+    }
     &#side-nav-box {
     display: block;
     position: fixed;
@@ -131,28 +138,29 @@ header{
   }
 }
 /*************************************************************************************************/
-/***********************************MOBILE STYLE END*******************************************/
+/***********************************MOBILE STYLE END**********************************************/
 /*************************************************************************************************/
 
-header 
-
-footer div {
-  overflow: hidden;
-  padding: 10px;
-    ul.social-media-btn {
-      float: right;
-      list-style: none;
-        li {
-          float: left;
+footer{ 
+    div {
+      overflow: hidden;
+      padding: 10px;
+        ul.social-media-btn {
+          float: right;
+          list-style: none;
+            li {
+              float: left;
+            }
         }
     }
 }
 
 section {
-  background-color: #fff; 
-  background-image: 
-  linear-gradient(#eee .1em, transparent .1em);
-  background-size: 100% 1.2em;
+  background-color:white;
+  background-image: linear-gradient(90deg, @BGC-A 50%, transparent 50%),
+  linear-gradient(@BGC-A 50%, transparent 50%);
+  background-size:50px 50px;
+  background-attachment:fixed;
   width: 100%;
   margin: 0 auto;
   padding: 80px 0 30px;
