@@ -1,119 +1,116 @@
 <!doctype html>
 <html lang="en" ng-app="personalApp">
-<head>
-	<title>Jing</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="cache-control" content="max-age=0" />
-	<meta http-equiv="cache-control" content="no-cache" />
-	<meta http-equiv="expires" content="0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<link rel="stylesheet" type="text/css" href="styles/base.css">
-	<link rel="stylesheet" href="styles/css/homepage.css">
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-	<script type='text/javascript' src='js/homepage.js'></script>
-	<script type='text/javascript' src='js/GATracking.js'></script>
-  <script type='text/javascript' src='lib/angular/angular.js'></script>
-  <script type='text/javascript' src='js/controllers.js'></script>
-	<script type="text/javascript">var switchTo5x=true;</script>
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-	<script type="text/javascript">stLight.options({publisher: "e0087832-8d49-4870-9515-b083c6b7940f", doNotHash: true, doNotCopy: false, hashAddressBar: false});</script>
-</head>
-<body>
-	<header>
-		<div class="drop-shadow curved curved-hz-down">
-			<h1>Welcome to Jing's Site</h1>
-			<ul id="top-nav">
-				<li><a class="top-nav" id="about-top-nav">About</a></li>
-				<li><a class="top-nav" id="skills-top-nav">Skills</a></li>
-				<li><a class="top-nav" id="experience-top-nav">Experience</a></li>
-				<li><a class="top-nav" id="education-top-nav">Education</a></li>
-				<li><a class="top-nav" id="contact-top-nav">Contact</a></li>
-			</ul>
-		</div>
-	</header>
-	<section>
-	<div id="side-nav-box">
-		<div id="toggle-btn">|||</div>
-		<ul id="side-nav">
-			<li><a id="top-btn">Top</a></li>
-			<li><a id="up-btn">Up</a></li>
-			<li><a id="down-btn">Down</a></li>
-		</ul>
-	</div>
-	<div class="main-content">	
-		<div class="content-detail-section drop-shadow raised" id="about-box">
-			<h1>About Me</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, necessitatibus fuga explicabo aut exercitationem et placeat sapiente aperiam error in. Laborum, quae, in cupiditate atque obcaecati voluptas accusantium rerum facere!
-			</p>
-		</div>
-		<div class="content-detail-section drop-shadow raised" id="skills-box" ng-controller="SkillListCtrl">
-       <h1>Skills</h1> 
-				<ul>
-					<li ng-repeat="skill in skills" ng-bind-html-unsafe="skill.description">
-             {{skill.description}}
-          </li>
-				</ul>
-		</div>
-		<div class="content-detail-section drop-shadow raised" id="experience-box" ng-controller="ExpListCtrl">
-			<h1>Work Experience</h1>
-      <div><em>Skill Search: </em><input ng-model="query"><em>Sort: </em>
-          
-          <select ng-model="orderProp">
-            <option value="-id">old -> new</option>
-            <option value="id">new -> old</option>
-          </select>
-      </div>
-      <div ng-repeat="exp in exps | filter:query | orderBy:orderProp">
-        <h2>{{exp.title}}</h2>
-        <p ng-bind-html-unsafe="exp.description">{{exp.description}}</p>
-        <ul>
-					<li ng-repeat="task in (exp.tasks) | filter:query"  ng-bind-html-unsafe="task.description">
-             {{task.description}}
-          </li>
-				 </ul>
-      </div>
-			
-		</div>
-		<div class="content-detail-section drop-shadow raised" id="education-box">
-			<h1>Education</h1>
-			<h2>BACHELOR DEGREE IN COMPUTER GAMING AND SIMULATION</h2>
-			<span>University of Baltimore, Simulation and Digital Entertainment Program, Baltimore MD</span>
-			<h2>CERTIFICATE IN COMPUTER GAMING AND SIMULATION</h2>
-			<span>Montgomery College, Rockville MD</span>
-			<h2>DIPLOMA OF INTERNATIONAL BACCALAUREATE DP (HIGH SCHOOL)</h2>
-			<span>Guangdong Country Garden School, Shunde, Guangdong China.</span>
-		</div>	
-		<div class="content-detail-section drop-shadow raised" id="contact-box">
-			<h1>Contact</h1>
-			<form id="contact-form" action="contact.php" method="post">
-				<p>
-					<em>Email * </em>
-					<input class="full-width-field" id="email_input" name="email" type="email">
-				</p>
-				<p>
-					<em>Send me Jing's resume: </em><input id="resume_check" name="resume" type="checkbox">
-				</p>
-				<p>
-					<em>Comment </em>
-					<textarea class="full-width-field" name="comments" id="comment_input">Please leave a comment here</textarea>
-				</p>
-				<p>
-					<input type="submit">
-				</p>
-			</form>
-		</div>
-	</div>
-	</section>
-	<footer>
-		<div>
-			<ul class="social-media-btn">			
-				<li class='footer-sharing-btn st_facebook_large' displayText='Facebook'></li>
-				<li class='footer-sharing-btn st_twitter_large' displayText='Tweet'></li>
-				<li class='footer-sharing-btn st_linkedin_large' displayText='LinkedIn'></li>
-				<li class='footer-sharing-btn st_googleplus_large' displayText='Google +'></li>
-			</ul>
-		</div>
-	</footer>
-</body>
+ <head>
+  <title>Jing</title>
+  <meta charset="UTF-8" />
+  <meta content="max-age=0" http-equiv="cache-control" />
+  <meta content="no-cache" http-equiv="cache-control" />
+  <meta content="0" http-equiv="expires" />
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
+  <link href="styles/base.css" rel="stylesheet" type="text/css" />
+  <link href="styles/less/homepage.less" rel="stylesheet/less" type="text/css" />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script><script type='text/javascript' src='js/less.js'></script><script type='text/javascript' src='js/homepage.js'></script><script type='text/javascript' src='js/GATracking.js'></script><script type='text/javascript' src='lib/angular/angular.js'></script><script type='text/javascript' src='js/controllers.js'></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "e0087832-8d49-4870-9515-b083c6b7940f", doNotHash: true, doNotCopy: false, hashAddressBar: false});</script> </head>
+ <body>
+  <header>
+  <div class="drop-shadow curved curved-hz-down">
+   <h1>
+    Welcome to Jing&#39;s Site</h1>
+   <ul id="top-nav">
+    <li>
+     <a class="top-nav" id="about-top-nav">About</a></li>
+    <li>
+     <a class="top-nav" id="skills-top-nav">Skills</a></li>
+    <li>
+     <a class="top-nav" id="experience-top-nav">Experience</a></li>
+    <li>
+     <a class="top-nav" id="education-top-nav">Education</a></li>
+    <li>
+     <a class="top-nav" id="contact-top-nav">Contact</a></li>
+   </ul>
+  </div>
+  </header> <section>
+  <div id="side-nav-box">
+   <div id="toggle-btn">
+    |||</div>
+   <ul id="side-nav">
+    <li>
+     <a id="top-btn">Top</a></li>
+    <li>
+     <a id="up-btn">Up</a></li>
+    <li>
+     <a id="down-btn">Down</a></li>
+   </ul>
+  </div>
+  <div class="main-content">
+   <div class="content-detail-section drop-shadow raised" id="about-box">
+    <h1>
+     About Me</h1>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, necessitatibus fuga explicabo aut exercitationem et placeat sapiente aperiam error in. Laborum, quae, in cupiditate atque obcaecati voluptas accusantium rerum facere!</p>
+   </div>
+   <div class="content-detail-section drop-shadow raised" id="skills-box" ng-controller="SkillListCtrl">
+    <h1>
+     Skills</h1>
+    <ul>
+     <li ng-bind-html-unsafe="skill.description" ng-repeat="skill in skills">
+      {{skill.description}}</li>
+    </ul>
+   </div>
+   <div class="content-detail-section drop-shadow raised" id="experience-box" ng-controller="ExpListCtrl">
+    <h1>
+     Work Experience</h1>
+    <div>
+     <em>Skill Search: </em><input ng-model="query" /><em>Sort: </em> <select ng-model="orderProp"><option value="-id">old -&gt; new</option><option value="id">new -&gt; old</option></select></div>
+    <div ng-repeat="exp in exps | filter:query | orderBy:orderProp">
+     <h2>
+      {{exp.title}}</h2>
+     <p ng-bind-html-unsafe="exp.description">
+      {{exp.description}}</p>
+     <ul>
+      <li ng-bind-html-unsafe="task.description" ng-repeat="task in (exp.tasks) | filter:query">
+       {{task.description}}</li>
+     </ul>
+    </div>
+   </div>
+   <div class="content-detail-section drop-shadow raised" id="education-box">
+    <h1>
+     Education</h1>
+    <h2>
+     BACHELOR DEGREE IN COMPUTER GAMING AND SIMULATION</h2>
+    <span>University of Baltimore, Simulation and Digital Entertainment Program, Baltimore MD</span>
+    <h2>
+     CERTIFICATE IN COMPUTER GAMING AND SIMULATION</h2>
+    <span>Montgomery College, Rockville MD</span>
+    <h2>
+     DIPLOMA OF INTERNATIONAL BACCALAUREATE DP (HIGH SCHOOL)</h2>
+    <span>Guangdong Country Garden School, Shunde, Guangdong China.</span></div>
+   <div class="content-detail-section drop-shadow raised" id="contact-box">
+    <h1>
+     Contact</h1>
+    <form action="contact.php" id="contact-form" method="post">
+     <p>
+      <em>Email * </em> <input class="full-width-field" id="email_input" name="email" type="email" /></p>
+     <p>
+      <em>Send me Jing&#39;s resume: </em><input id="resume_check" name="resume" type="checkbox" /></p>
+     <p>
+      <em>Comment </em><textarea class="full-width-field" id="comment_input" name="comments">Please leave a comment here</textarea></p>
+     <p>
+      <input type="submit" /></p>
+    </form>
+   </div>
+  </div>
+  </section> <footer>
+  <div>
+   <ul class="social-media-btn">
+    <li class="footer-sharing-btn st_facebook_large" displaytext="Facebook">
+     &nbsp;</li>
+    <li class="footer-sharing-btn st_twitter_large" displaytext="Tweet">
+     &nbsp;</li>
+    <li class="footer-sharing-btn st_linkedin_large" displaytext="LinkedIn">
+     &nbsp;</li>
+    <li class="footer-sharing-btn st_googleplus_large" displaytext="Google +">
+     &nbsp;</li>
+   </ul>
+  </div>
+  </footer></body>
 </html>

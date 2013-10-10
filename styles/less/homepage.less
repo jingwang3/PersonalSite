@@ -1,5 +1,301 @@
-body{
-  background-color:blue;
-  width:400px;
-  height:400px;
+header, footer {
+  color: #A5C956;
+  width: 100%;
+  div {
+        background: #7d7e7d;
+        background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7d7e7d), color-stop(100%, #0e0e0e));
+        background: -webkit-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        background: -o-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        background: -ms-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+        position: relative;
+  }
 }
+
+header #header-title, footer #footer-title {
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  padding: 10px 10px;
+    #header-title{
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    div {
+        height: 50px;
+        min-width: 300px;
+        h1 {
+              padding: 16px 0;
+              text-align: center;
+              font-size: 1.25em;
+              color: #fff;
+              display: none;
+        }
+    }
+    ul#top-nav {
+        text-align: center;
+    }
+}
+
+div#side-nav-box {
+  display: none;
+}
+
+/*************************************************************************************************/
+/***********************************MOBILE STYLE STARTS*******************************************/
+/*************************************************************************************************/
+@media screen and (max-width: 640px) {
+
+header{
+  ul#top-nav {
+    display: none;
+  }
+  div{
+    h1{
+        display:block
+    }
+  }
+}
+
+  div#side-nav-box ul, div#side-nav-box div#toggle-btn {
+    background: #7D7E7D;
+    background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7d7e7d), color-stop(100%, #0e0e0e));
+    background: -webkit-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+    background: -o-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+    background: -ms-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+    background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+  }
+  div{
+    &#side-nav-box {
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    right: 0;
+    bottom: 45%;
+    width: 70px;
+        ul {
+            list-style: none;
+            width: 70%;
+            float: left;
+      }
+        #toggle-btn {
+            color: #EEE;
+            font-size: 1em;
+            padding: 38px 0 0 5px;
+            height: 98px;
+            width: 30%;
+            float: left;
+            border-radius: 40px 0 0 40px;
+      }
+    }
+    &.right-nav-close {
+        right: -50px !important;
+    }
+  }
+
+  #side-nav li {
+    text-align: center;
+        &:nth-child(2) {
+        border-top: 1px solid #767676;
+        border-bottom: 1px solid #767676;
+      }
+        a {
+        font-size: 0.75em;
+        color: #ddd;
+        width: 50px;
+        display: inline-block;
+        padding: 5px 5px;
+        margin: 2px 0;
+        cursor: pointer;
+      }
+  }
+}
+/*************************************************************************************************/
+/***********************************MOBILE STYLE END*******************************************/
+/*************************************************************************************************/
+
+header ul#top-nav li {
+  text-align: center;
+  display: inline-block;
+}
+
+header ul#top-nav li a {
+  color: #bbb;
+  display: inline-block;
+  padding: 16px 10px;
+  margin: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer div {
+  overflow: hidden;
+  padding: 10px;
+    ul.social-media-btn {
+      float: right;
+      list-style: none;
+        li {
+          float: left;
+        }
+    }
+}
+
+section {
+  background-color: #fff; 
+  background-image: 
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 30px;
+  background-color: white;
+  font-size: 1em;
+  overflow: hidden;
+    .main-content {
+      padding: 0 15px 20px;
+      margin: 0 auto;
+      width: 80%;
+      min-width: 320px;
+      overflow: hidden;
+      border-top: 0;
+      color: #666;
+        h3 {
+          margin: 5px 0;
+          padding: 5px 0 0;
+          border-bottom: 1px solid #E2E2E2;
+          font-size: 0.85em;
+        }
+        h2 {
+          padding: 10px 0 0;
+        }
+        span {
+          font-size: 0.85em;
+        }
+        em.highlight {
+          font-weight: bold;
+        }
+        .content-detail-section {
+          background-color: white;
+          margin: 0 0 15px;
+          padding: 15px;
+            p {
+              padding: 5px 0 5px;
+            }
+            h1 {
+              font-size: 2.0em;
+              margin-bottom: 30px;
+              padding-bottom: 10px;
+              border-bottom: 3px solid #dae4e6;
+              line-height: 25px;
+            }
+            ul {
+              margin-left: 20px;
+              margin-bottom: 30px;
+                li {
+                  margin: 0 0 10px;
+                  font-size: 0.85em;
+                }
+            }
+            form {
+              padding: 0 5%;
+                .full-width-field {
+                  display: block;
+                  width: 100%;
+                }
+                textarea {
+                  height: 100px;
+                }
+            }
+        }
+    }
+}
+
+
+/*************************************************************************************************/
+/***********************************DROP SHADOW LIBRARY*******************************************/
+/*************************************************************************************************/
+.drop-shadow {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before, .drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.raised {
+  -webkit-box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 25px 15px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.curled {
+  border: 1px solid #efefef;
+  -moz-border-radius: 0 0 120px 120px/0 0 6px 6px;
+  border-radius: 0 0 120px 120px/0 0 6px 6px;
+}
+
+.curled:before, .curled:after {
+  bottom: 12px;
+  left: 10px;
+  width: 50%;
+  height: 55%;
+  max-width: 200px;
+  max-height: 100px;
+  -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  -webkit-transform: skew(-8deg) rotate(-3deg);
+  -moz-transform: skew(-8deg) rotate(-3deg);
+  -ms-transform: skew(-8deg) rotate(-3deg);
+  -o-transform: skew(-8deg) rotate(-3deg);
+  transform: skew(-8deg) rotate(-3deg);
+}
+
+.curled:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.curved:before {
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 10px/100px;
+  border-radius: 10px/100px;
+}
+
+.curved-hz-down:before {
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -webkit-box-shadow: 5px 10px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 100px/10px;
+  border-radius: 100px/10px;
+}
+/*************************************************************************************************/
+/***********************************DROP SHADOW LIBRARY*******************************************/
+/*************************************************************************************************/
