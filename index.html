@@ -87,9 +87,13 @@
    <div class="content-detail-section drop-shadow raised" id="contact-box">
     <h1>
      Contact</h1>
-    <form action="contact.php" id="contact-form" method="post">
+    <form name="contactForm" action="contact.php" id="contact-form" method="post">
      <p>
-      <em>Email * </em> <input class="full-width-field" id="email_input" name="email" type="email" /></p>
+      <em>Email * </em> <input class="full-width-field" id="email_input" name="email" type="email" required />
+      <span class="error" ng-show="contactForm.input.$error.required">
+        Required!</span>
+      <span class="error" ng-show="contactForm.input.$error.email">
+        Not valid email!</span></p>
      <p>
       <em>Send me Jing&#39;s resume: </em><input id="resume_check" name="resume" type="checkbox" /></p>
      <p>
