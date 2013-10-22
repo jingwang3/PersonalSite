@@ -1,6 +1,6 @@
 var paragraphs = new Array();
 $(document).ready(function (){
-  less.modifyVars({'@BGC-A': 'rgba(' + Math.random()*225 + ',' + Math.random()*225 +',' + Math.random()*225 +',.45)'});
+  //less.modifyVars({'@BGC-A': 'rgba(' + Math.random()*225 + ',' + Math.random()*225 +',' + Math.random()*225 +',.45)'});
   for(i=0; i<$('.content-detail-section').length; i++){
     paragraphs[i] = $('.content-detail-section:nth-child(' + (i+1) +')');
   } 
@@ -8,7 +8,7 @@ $(document).ready(function (){
   $('html, body').animate({
     scrollTop: $("#" + $(this).attr('id').replace($(this).attr('class'),'box')).offset().top-80
   }, 1500,function() {
-    less.modifyVars({'@BGC-A': 'rgba(' + Math.random()*225 + ',' + Math.random()*225 +',' + Math.random()*225 +',.45)'});
+    //less.modifyVars({'@BGC-A': 'rgba(' + Math.random()*225 + ',' + Math.random()*225 +',' + Math.random()*225 +',.45)'});
   });
 });
 $('#side-nav #top-btn').click(function (){
